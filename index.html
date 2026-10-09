@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Altura Café — de finca a taza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">
+    <span></span><span></span><span></span>
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M20 4 C11 4 5 12 5 21 C5 30 12 36 20 36 C28 36 35 30 35 21" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="20" cy="20" r="4" fill="currentColor"/>
+      </svg>
+      <div class="brand-text">
+        <span class="brand-name">Altura</span>
+        <span class="brand-sub">Café de origen</span>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Vistas del sitio">
+      <ul>
+        <li><button class="nav-link" data-view="inicio"><span class="nav-index">01</span><span>Inicio</span></button></li>
+        <li><button class="nav-link" data-view="nosotros"><span class="nav-index">02</span><span>Nosotros</span></button></li>
+        <li><button class="nav-link" data-view="origen"><span class="nav-index">03</span><span>Origen</span></button></li>
+        <li><button class="nav-link" data-view="proceso"><span class="nav-index">04</span><span>Proceso</span></button></li>
+        <li><button class="nav-link" data-view="productos"><span class="nav-index">05</span><span>Productos</span></button></li>
+        <li><button class="nav-link" data-view="sostenibilidad"><span class="nav-index">06</span><span>Sostenibilidad</span></button></li>
+        <li><button class="nav-link" data-view="galeria"><span class="nav-index">07</span><span>Galería</span></button></li>
+        <li><button class="nav-link" data-view="testimonios"><span class="nav-index">08</span><span>Testimonios</span></button></li>
+        <li><button class="nav-link" data-view="precios"><span class="nav-index">09</span><span>Precios</span></button></li>
+        <li><button class="nav-link" data-view="contacto"><span class="nav-index">10</span><span>Contacto</span></button></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-foot">
+      <p>De finca a taza, en menos de 10 días.</p>
+    </div>
+  </aside>
+
+  <div class="scrim" id="scrim"></div>
+
+  <main class="content" id="content">
+
+    <div class="content-meta">
+      <span class="meta-index" id="viewIndex">01 / 10</span>
+      <span class="meta-name" id="viewName">Inicio</span>
+    </div>
+
+    <!-- 01 INICIO -->
+    <section class="view" id="view-inicio" data-title="Inicio">
+      <div class="hero">
+        <div class="hero-text">
+          <h1>El café cambia de sabor cada cien metros de altura.</h1>
+          <p class="hero-lead">Compramos café en cereza directamente a catorce fincas de Veracruz y Chiapas, lo tostamos en lotes pequeños en Xalapa y lo enviamos antes de que cumpla dos semanas fuera del árbol.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-goto="productos">Ver catálogo</button>
+            <button class="btn btn-ghost" data-goto="origen">Conocer el origen</button>
+          </div>
+        </div>
+        <div class="hero-figure" aria-hidden="true">
+          <svg viewBox="0 0 320 320">
+            <polyline points="10,220 70,140 130,190 180,90 230,150 310,60" fill="none" stroke="var(--accent)" stroke-width="2"/>
+            <polyline points="10,260 90,190 150,230 200,140 260,200 310,120" fill="none" stroke="var(--line-strong)" stroke-width="1.5"/>
+            <circle cx="230" cy="150" r="3.5" fill="var(--accent)"/>
+            <circle cx="180" cy="90" r="3.5" fill="var(--accent)"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat"><span class="stat-num">1,700</span><span class="stat-label">msnm en el punto más alto</span></div>
+        <div class="stat"><span class="stat-num">14</span><span class="stat-label">fincas aliadas</span></div>
+        <div class="stat"><span class="stat-num">9</span><span class="stat-label">días de finca a paquete</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">estados de origen</span></div>
+      </div>
+    </section>
+
+    <!-- 02 NOSOTROS -->
+    <section class="view" id="view-nosotros" data-title="Nosotros">
+      <h2>Nosotros</h2>
+      <p class="section-lead">Altura nació de una pregunta sencilla: ¿por qué el café que se cultiva a media hora de Xalapa viajaba primero a Houston antes de volver, ya tostado, a una cafetería mexicana?</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-year">2016</span>
+          <p>Dos agrónomas, Renata Solís y Paulina Ibarra, empiezan a comprar café en cereza directamente a productores de Coatepec para un solo café de la ciudad.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2018</span>
+          <p>La primera exportación propia sale de Veracruz. El margen adicional se reparte con las cuatro fincas fundadoras.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2021</span>
+          <p>Abre el tueste propio en Xalapa, con un tostador de tambor de doce kilos y catas semanales abiertas al público.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">Hoy</span>
+          <p>Catorce fincas aliadas en Veracruz y Chiapas, y un compromiso: nunca vender un café que no hayamos catado nosotras mismas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 ORIGEN -->
+    <section class="view" id="view-origen" data-title="Origen">
+      <h2>Origen</h2>
+      <p class="section-lead">Cada lote se vende con el nombre de la finca, no solo del país. Así sabes exactamente qué mano cortó tu café.</p>
+      <div class="farm-grid">
+        <article class="farm-card">
+          <h3>Finca La Cumbre</h3>
+          <p class="farm-meta">Coatepec, Veracruz · 1,350 msnm · Bourbon</p>
+          <p>Suelos volcánicos y niebla constante. Notas de mandarina, panela y almendra tostada.</p>
+        </article>
+        <article class="farm-card">
+          <h3>Finca El Mirador</h3>
+          <p class="farm-meta">Tapachula, Chiapas · 1,600 msnm · Typica</p>
+          <p>Ladera del volcán Tacaná, sombra de plátano e inga. Notas de durazno, miel y cacao.</p>
+        </article>
+        <article class="farm-card">
+          <h3>Finca Vista Hermosa</h3>
+          <p class="farm-meta">Huatusco, Veracruz · 1,150 msnm · Caturra</p>
+          <p>Microlotes de proceso natural. Notas de fresa, vino tinto y chocolate oscuro.</p>
+        </article>
+        <article class="farm-card">
+          <h3>Finca Yerba Santa</h3>
+          <p class="farm-meta">Motozintla, Chiapas · 1,700 msnm · Geisha</p>
+          <p>El punto más alto de la red. Notas de jazmín, bergamota y té negro.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 04 PROCESO -->
+    <section class="view" id="view-proceso" data-title="Proceso">
+      <h2>Proceso</h2>
+      <p class="section-lead">De la cereza roja a la bolsa cerrada, seis pasos que no nos saltamos aunque cueste tiempo.</p>
+      <ol class="steps">
+        <li><span class="step-num">01</span><div><h3>Cosecha selectiva</h3><p>Solo se corta la cereza en su punto óptimo de maduración, a mano, en pasadas semanales por la misma parcela.</p></div></li>
+        <li><span class="step-num">02</span><div><h3>Despulpado</h3><p>La pulpa se retira el mismo día del corte para frenar la fermentación temprana.</p></div></li>
+        <li><span class="step-num">03</span><div><h3>Fermentación controlada</h3><p>Entre 18 y 36 horas en tanques, según la variedad, con medición de temperatura y pH.</p></div></li>
+        <li><span class="step-num">04</span><div><h3>Secado en camas africanas</h3><p>Dos a tres semanas al sol, con volteos constantes hasta llegar a 11% de humedad.</p></div></li>
+        <li><span class="step-num">05</span><div><h3>Tueste por lotes</h3><p>Lotes de doce kilos, curva registrada y catada antes de aprobar la producción completa.</p></div></li>
+        <li><span class="step-num">06</span><div><h3>Empaque con válvula</h3><p>Bolsa con válvula desgasificadora, sellada el mismo día del tueste.</p></div></li>
+      </ol>
+    </section>
+
+    <!-- 05 PRODUCTOS -->
+    <section class="view" id="view-productos" data-title="Productos">
+      <h2>Productos</h2>
+      <p class="section-lead">Cuatro cafés en catálogo permanente. Los microlotes de temporada se anuncian solo a quienes tienen una suscripción activa.</p>
+      <div class="product-grid">
+        <article class="product-card">
+          <h3>La Cumbre</h3>
+          <p class="product-meta">Lavado · Coatepec, Ver.</p>
+          <p class="product-notes">Mandarina, panela, almendra</p>
+          <p class="product-price">$265 MXN <span>/ 340 g</span></p>
+        </article>
+        <article class="product-card">
+          <h3>El Mirador</h3>
+          <p class="product-meta">Honey · Tapachula, Chis.</p>
+          <p class="product-notes">Durazno, miel, cacao</p>
+          <p class="product-price">$290 MXN <span>/ 340 g</span></p>
+        </article>
+        <article class="product-card">
+          <h3>Vista Hermosa</h3>
+          <p class="product-meta">Natural · Huatusco, Ver.</p>
+          <p class="product-notes">Fresa, vino, chocolate oscuro</p>
+          <p class="product-price">$310 MXN <span>/ 340 g</span></p>
+        </article>
+        <article class="product-card">
+          <h3>Mezcla Altura</h3>
+          <p class="product-meta">Blend de casa · tres fincas</p>
+          <p class="product-notes">Nuez, caramelo, cuerpo redondo</p>
+          <p class="product-price">$240 MXN <span>/ 340 g</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 06 SOSTENIBILIDAD -->
+    <section class="view" id="view-sostenibilidad" data-title="Sostenibilidad">
+      <h2>Sostenibilidad</h2>
+      <p class="section-lead">Compramos por calidad, no por volumen, y eso cambia lo que le pagamos a quien cultiva.</p>
+      <div class="commit-grid">
+        <div class="commit">
+          <h3>Precio justo</h3>
+          <p>Pagamos en promedio 38% por encima del precio de referencia del mercado C, fijado antes de la cosecha.</p>
+        </div>
+        <div class="commit">
+          <h3>Agua del beneficio</h3>
+          <p>El agua usada en el despulpado se trata en fosas de sedimentación antes de volver al suelo.</p>
+        </div>
+        <div class="commit">
+          <h3>Sombra y suelo</h3>
+          <p>Todas las fincas aliadas cultivan bajo sombra diversificada, sin desmonte de bosque nuevo.</p>
+        </div>
+        <div class="commit">
+          <h3>Trato directo</h3>
+          <p>Sin intermediarios: la finca negocia el precio directamente con nosotras, cada ciclo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 GALERÍA -->
+    <section class="view" id="view-galeria" data-title="Galería">
+      <h2>Galería</h2>
+      <p class="section-lead">Postales del ciclo del café, dibujadas a partir de nuestras visitas de finca.</p>
+      <div class="gallery-grid">
+        <figure class="plate plate-1"><figcaption>Corte en Finca La Cumbre</figcaption></figure>
+        <figure class="plate plate-2"><figcaption>Camas de secado al amanecer</figcaption></figure>
+        <figure class="plate plate-3"><figcaption>Catación matutina en Xalapa</figcaption></figure>
+        <figure class="plate plate-4"><figcaption>Tueste en tambor, lote 214</figcaption></figure>
+        <figure class="plate plate-5"><figcaption>Empaque manual con válvula</figcaption></figure>
+        <figure class="plate plate-6"><figcaption>Niebla sobre Finca El Mirador</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- 08 TESTIMONIOS -->
+    <section class="view" id="view-testimonios" data-title="Testimonios">
+      <h2>Testimonios</h2>
+      <div class="quote-grid">
+        <blockquote class="quote">
+          <p>Cambiamos de proveedor hace dos años y desde entonces cada bolsa trae fecha de tueste. Eso solo ya cambió nuestra barra de espresso.</p>
+          <cite>Mauricio Reyes, dueño de Cafetería Nube, CDMX</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>La suscripción llega siempre el mismo día y el café nunca sabe plano, ni el mes que pedí el natural de Vista Hermosa.</p>
+          <cite>Ivonne Castillo, suscriptora desde 2022</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>Visité la finca El Mirador con ellas y vi cómo se paga el corte. No es una historia de empaque, es como trabajan de verdad.</p>
+          <cite>Diego Farías, barista y catador certificado</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- 09 PRECIOS -->
+    <section class="view" id="view-precios" data-title="Precios">
+      <h2>Precios</h2>
+      <p class="section-lead">Tres formas de recibir café en casa, sin permanencia forzosa.</p>
+      <div class="price-grid">
+        <article class="price-card">
+          <h3>Explorador</h3>
+          <p class="price-amount">$260 <span>/ mes</span></p>
+          <p class="price-detail">Una bolsa de 340 g, origen rotativo cada mes.</p>
+          <ul>
+            <li>1 bolsa mensual</li>
+            <li>Nota de cata incluida</li>
+            <li>Cancela cuando quieras</li>
+          </ul>
+        </article>
+        <article class="price-card price-card-featured">
+          <h3>Ritual</h3>
+          <p class="price-amount">$480 <span>/ mes</span></p>
+          <p class="price-detail">Dos bolsas al mes, con 8% de ahorro frente al precio individual.</p>
+          <ul>
+            <li>2 bolsas mensuales</li>
+            <li>Eliges origen fijo o rotativo</li>
+            <li>Envío prioritario</li>
+          </ul>
+        </article>
+        <article class="price-card">
+          <h3>Reserva</h3>
+          <p class="price-amount">$690 <span>/ mes</span></p>
+          <p class="price-detail">Tres bolsas, con acceso a microlotes que no llegan al catálogo público.</p>
+          <ul>
+            <li>3 bolsas mensuales</li>
+            <li>Microlotes de temporada</li>
+            <li>Llamada de cata trimestral</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10 CONTACTO -->
+    <section class="view" id="view-contacto" data-title="Contacto">
+      <h2>Contacto</h2>
+      <div class="contact-layout">
+        <form class="contact-form" id="contactForm" novalidate>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Correo</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+        <div class="contact-info">
+          <div>
+            <h3>Tostaduría</h3>
+            <p>Callejón del Beneficio 14<br>Xalapa, Veracruz, México</p>
+          </div>
+          <div>
+            <h3>Horario de venta</h3>
+            <p>Martes a sábado, 9:00–17:00</p>
+          </div>
+          <div>
+            <h3>Escríbenos</h3>
+            <p>hola@alturacafe.mx<br>+52 228 555 0134</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
